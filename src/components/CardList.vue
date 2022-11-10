@@ -21,7 +21,7 @@
 <template>
 
     <div class="row-cards" >
-
+        <h3>Found 62 characters</h3>
         <CardCharacter v-for="character in store.characters" :key="character.char_id" :character="character"/>
     </div>
 
@@ -31,8 +31,22 @@
     .container-fluid{
         .container{
             .row-cards{
+
+                h3{
+                    width: 110%;
+                    background-color: #212529;
+                    color: white;
+                    padding: 2rem;
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+
+
+                }
                 display: flex;
                 flex-wrap: wrap;
+                background-color: white;
+                padding: 4rem;
+                padding-top: 6rem;
             }
         }
     }

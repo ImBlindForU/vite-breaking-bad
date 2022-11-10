@@ -16,6 +16,7 @@
     <div class="card">
         <img :src="character.img" alt="">
         <h2>{{character.name}}</h2>
+        <p>BreakingBad</p>
         <p>"{{character.status}}"</p>
     </div>
 
@@ -26,13 +27,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        color: white;
         img{
             max-width: 100%;
         }
         width: calc(100% / 5 - 2rem);
         padding: 2rem;
         margin: 1rem;
-        background-color:greenyellow;
+        background-color:#2e3a46;
         border: 1px solid blue;
         
         h2{
@@ -44,8 +46,8 @@
         p{
             text-align: center;
             font-size: 2rem;
-
-
+            color: grey;
+            padding: 0.5rem;
         }
     }
 </style>

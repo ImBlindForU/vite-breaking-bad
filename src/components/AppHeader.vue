@@ -14,6 +14,7 @@
     .container-fluid{
         h1{
             font-size: 5rem;
+            color: white;
         }
     }
 </style>
