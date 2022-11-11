@@ -15,11 +15,18 @@
       }
     },
     created() {
-      axios.get("https://www.breakingbadapi.com/api/characters").then((resp) => {
+      this.getCharacters();
+    },
+    methods:{
+      getCharacters(){
+        const apiUrl = "https://www.breakingbadapi.com/api/characters?"
+
+        axios.get(apiUrl).then((resp) => {
         this.store.characters = resp.data
-      console.log(this.store.characters);
-      
+        console.log(this.store.characters);
+          
     });
+      }
     }
   }
 </script>

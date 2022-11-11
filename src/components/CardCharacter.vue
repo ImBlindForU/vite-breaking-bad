@@ -16,8 +16,8 @@
     <div class="card">
         <img :src="character.img" alt="">
         <h2>{{character.name}}</h2>
-        <p>BreakingBad</p>
         <p>"{{character.status}}"</p>
+        <p>{{character.category}}</p>
     </div>
 
 </template>
