@@ -17,10 +17,10 @@
 <template>
         <div class="mini-container">
             <div class="select">
-                <select name="select" id="" v-model="store.seriesOptions">
-                    <option @change="$emit('categorySelected')" v-for="(option, index) in seriesOptions" :value="option" :key="index">{{option}}</option>
+                <select name="select" id="" v-model="store.seriesOptions" @change="$emit('categorySelected')">
+                    <option  v-for="(option, index) in seriesOptions" :value="option" :key="index">{{option}}</option>
                 </select>
-                <button class="" @click="$emit('categorySelected')">change</button>
+                <!-- <button class="" @click="$emit('categorySelected')">change</button> -->
             </div>
         </div>
             
